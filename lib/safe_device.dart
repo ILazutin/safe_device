@@ -39,7 +39,7 @@ class SafeDevice {
           ? false
           : true;
     } else {
-      return isJailBroken || !isRealDevice;
+      return isJailBroken || !isRealDevice ? false : true;
     }
   }
 
