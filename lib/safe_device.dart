@@ -50,7 +50,7 @@ class SafeDevice {
           ? false
           : true;
     } else {
-      return isJailBroken || !isRealDevice || canMockLocation;
+      return isJailBroken || !isRealDevice || canMockLocation ? false : true;
     }
   }
 
